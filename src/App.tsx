@@ -7,7 +7,7 @@ import AdminPage from "./components/AdminPage";
 import BookingForm from "./components/BookingForm";
 import NavBar from "./components/NavBar";
 import "./App.css";
-import { createRestaurant } from "./Service/creatrestaurant";
+import { createRestaurant } from "./Service/createrestaurant";
 
 const AppContainer = styled.div`
   max-width: 100%;

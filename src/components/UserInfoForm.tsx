@@ -7,6 +7,7 @@ type FormData = {
   name: string;
   email: string;
   phoneNumber: string;
+  numberOfGuests: number;
 };
 
 type UserInfoFormProps = {
@@ -77,32 +78,31 @@ const UserInfoForm: React.FC<UserInfoFormProps> = ({ date, time, onBookingSucces
     try {
       await bookTable({ ...data, date, time }, "6413865977123b59344d6cbd");
       onBookingSuccess();
-      alert("Bokningen har genomförts!");
+      alert("Booking is Done");
     } catch (error) {
-      console.error(error);
-      alert("Något gick fel. Försök igen.");
+      alert("Something went wrong!");
     }
   };
   
-
   return (
     <UserInfoFormContainer>
-      <h3>Personuppgifter:</h3>
-      <p>Vi följer GDPR-regler för hantering av personuppgifter.</p>
+      <h3>Personal Info:</h3>
+      <p>We comply with GDPR rules for handling personal data.</p>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Label htmlFor="name">Namn:</Label>
+        <Label htmlFor="name">Name:</Label>
         <Input {...register("name")} type="text" id="name" required />
-        <Label htmlFor="email">E-post:</Label>
+        <Label htmlFor="email">Email:</Label>
         <Input {...register("email")} type="email" id="email" required />
-
-        <Label htmlFor="phoneNumber">Telefonnummer:</Label>
+        <Label htmlFor="phoneNumber">Phone:</Label>
         <Input {...register("phoneNumber")} type="tel" id="phoneNumber" required />
+        <Label htmlFor="numberOfGuests">Number Of Guests:</Label>
+        <Input {...register("numberOfGuests")} type="number" id="numberOfGuests" min="1" max="6" />
 
         <Button type="submit" disabled={formState.isSubmitting}>
-          Spara
+          Book
         </Button>
         <CancelButton type="button" onClick={onBookingSuccess}>
-          Avbryt
+          Cancel
         </CancelButton>
       </Form>
     </UserInfoFormContainer>

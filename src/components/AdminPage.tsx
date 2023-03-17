@@ -105,7 +105,7 @@ const url= "https://school-restaurant-api.azurewebsites.net/booking/delete/"
   const handleDeletBooking = async ( id: string) => {
     let response = await axios.delete(url+id)
     .then (()=>{
-      alert("Booking tas bort")
+      alert("Booking is removed!")
     } ); 
 
   }
@@ -132,13 +132,11 @@ let html = bookings.map((booking)=>{
       <Table>
         <thead>
           <tr>
-            <TableHeader>Name</TableHeader>
-            <TableHeader>Email</TableHeader>
-            <TableHeader>Phone</TableHeader>
+            <TableHeader>BookningsId</TableHeader>
             <TableHeader>Date</TableHeader>
             <TableHeader>Time</TableHeader>
-            <TableHeader>Num People</TableHeader>
-            <TableHeader></TableHeader>
+            <TableHeader>Guest</TableHeader>
+            <TableHeader>Action</TableHeader>
           </tr>
         </thead>
         <tbody>

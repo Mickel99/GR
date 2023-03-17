@@ -77,13 +77,11 @@ const BookingForm = () => {
   return (
     <BookingFormContainer>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <Label htmlFor="date">Datum:</Label>
+        <Label htmlFor="date">Date:</Label>
         <Input {...register("date")} type="date" id="date" />
 
-        <Label htmlFor="numberOfGuests">Antal gäster:</Label>
-        <Input {...register("numberOfGuests")} type="number" id="numberOfGuests" min="1" max="6" />
 
-        <Button type="submit">Sök</Button>
+        <Button type="submit">Search</Button>
       </Form>
 
       {availableTimes.length > 0 && (

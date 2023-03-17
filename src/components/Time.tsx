@@ -8,7 +8,7 @@ type TimeSlotSelectorProps = {
 const TimeSlotSelector: React.FC<TimeSlotSelectorProps> = ({ times, onSelectTime }) => {
   return (
     <div>
-      <h3>Tillgängliga tider:</h3>
+      <h3>Available Hours:</h3>
       <ul>
         {times.map((time, index) => (
           <li key={index}>

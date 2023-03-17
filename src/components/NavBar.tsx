@@ -77,7 +77,7 @@ function NavBar() {
   return (
     <NavContainer>
       <Link to="/">
-        <h1>AppName</h1>
+        <h1>ITALIANO ROM</h1>
       </Link>
       <HamburgerButton onClick={toggleMenu}>
         <HamburgerIcon />

@@ -13,7 +13,7 @@ const Hero = styled.div`
   justify-content: center;
   align-items: center;
   height: 89vh;
-  background-image: url("https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://cdn-rdb.arla.com/Files/arla-se/99915790/066e6057-783e-47cb-812f-56a92cfbfca1.jpg?crop=(0,59,0,-89)&w=1269&h=715&mode=crop&ak=f525e733&hm=dcc4fafd");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -189,36 +189,33 @@ const HomePage = () => {
   return (
     <HomePageContainer>
       <Hero>
-        <HeroTitle>Welcome to My Restaurant</HeroTitle>
+        <HeroTitle>Welcome to ITALIANO ROM</HeroTitle>
       </Hero>
 
       <MenuSection>
         <MenuTitle>Menu</MenuTitle>
         <MenuItems>
-          <MenuItem>Appetizers</MenuItem>
-          <MenuItem>Entrees</MenuItem>
-          <MenuItem>Desserts</MenuItem>
-          <MenuItem>Beverages</MenuItem>
+          <MenuItem> Lasagne alla Bolognese (Traditional Lasagna with Bolognese Sauce)A traditional dish from Emilia-Romagna, this traditional Lasagne alla Bolognese recipe calls for egg pasta, creamy béchamel, and Bolognese ragù. </MenuItem>
+          <MenuItem>Pasta al pomodoroPasta al pomodoro is an Italian food typically prepared with pasta, olive oil, fresh tomatoes, basil, and various other fresh ingredients.</MenuItem>
+          <MenuItem>Margherita PizzaA traditional Neapolitan Margherita pizza recipe is tomato sauce with fresh tomatoes, mozzarella cheese and basil which represent the colours of the Italian flag – white cheese, green basil and red tomato.</MenuItem>
+          <MenuItem>Salami Pizza an incredible and simple twist on the classic pepperoni pizza, but instead you top it with salami</MenuItem>
         </MenuItems>
       </MenuSection>
 
       <InfoSection>
         <InfoTitle>About Us</InfoTitle>
         <InfoText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-          condimentum risus quis dolor faucibus, eu tincidunt elit pulvinar.
-          Proin nec velit sit amet leo venenatis dapibus.
+        We take our inspiration from the Italian way of life, putting our heart and soul into the details. So that when you come to our restaurants, you can relax, unwind and be yourself.
         </InfoText>
+        <InfoText>Call Us : 0782938471</InfoText>
+        <InfoText>Address: Vasagatan 1</InfoText>
+        <InfoText> City: Stockholm</InfoText>
         <InfoDivider />
-        <InfoText>
-          Nullam posuere arcu at lectus bibendum, quis consequat ex gravida.
-          Maecenas suscipit, nibh sed tincidunt iaculis, tellus velit vehicula
-          lectus, vel rutrum odio felis nec sapien.
-        </InfoText>
       </InfoSection>
 
       {/* Footer component */}
       <Footer>
+      
         <SocialIcons>
           <SocialIcon href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebookF />
